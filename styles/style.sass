@@ -1,0 +1,667 @@
+@import url("https://fonts.googleapis.com/css2?family=Muli:wght@300;400;700&display=swap")
+
+\:root
+  --dark-grey:#1f1534
+  --grey:#7d7987
+  --black:#000000
+  --white:#ffffff
+  --blue:#458ff6
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+  &:before, &:after
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+ul
+  list-style-type: none
+
+a
+  text-decoration: none
+
+html, body
+  font-family: "Muli", sans-serif
+
+.wrapper
+  background-color: #fff
+  box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4)
+  min-height: 100%
+  overflow: hidden
+
+.container
+  max-width: 1277px
+  width: 100%
+  padding: 0px 15px
+  margin: 0px auto
+
+/* Header
+
+.header
+  background-color: #fff
+  padding-top: 16px
+  padding-bottom: 10px
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  z-index: 100
+
+  .container
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    .logo
+      display: flex
+      align-items: center
+
+      span
+        font-weight: bold
+        font-size: 24px
+        line-height: 30px
+        color: #233348
+        mix-blend-mode: normal
+        margin-left: 12px
+
+    .nav
+      .nav-link
+        font-size: 18px
+        line-height: 23px
+        color: var(--dark-grey)
+        opacity: 0.5
+        margin-right: 40px
+
+      .nav-link__active
+        font-weight: bold
+        opacity: 1
+
+    .hamburger
+      display: none
+      cursor: pointer
+      width: 32px
+      height: 32px
+      border: none
+      background-color: transparent
+
+@media (max-width: 842px)
+  .header .container
+    .nav
+      display: none
+
+    .hamburger
+      display: block
+
+@media (max-width: 842px)
+  .header
+    /* padding-top: 20px
+
+.element
+  position: absolute
+  top: 160px
+  left: 0
+  width: 132px
+  height: 115px
+
+/* Hero section
+
+.hero-section
+  padding-top: calc(84px + 107px)
+
+  /* min-height: 100vh
+
+  .container
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+    .left
+      animation: fadeInToRight 800ms cubic-bezier(0.22, 0.32, 0, 1.54) 400ms
+
+    .right
+      animation: fadeInToLeft 800ms cubic-bezier(0.22, 0.32, 0, 1.54) 400ms
+
+    .info-wrapper
+      padding: 0px 5px
+      max-width: 445px
+      width: 100%
+      padding-top: 106px
+
+      .title
+        font-weight: bold
+        font-size: 48px
+        line-height: 56px
+        color: var(--black)
+        mix-blend-mode: normal
+
+      .subtitle
+        margin-top: 25px
+        font-weight: 300
+        font-size: 21px
+        line-height: 32px
+        color: var(--grey)
+        mix-blend-mode: normal
+
+      .consult-btn
+        display: inline-block
+        width: 200px
+        margin-top: 45px
+        padding: 0px 40px
+        background-color: var(--blue)
+        border-radius: 55px
+        font-weight: bold
+        font-size: 18px
+        line-height: 60px
+        color: var(--white)
+        mix-blend-mode: normal
+        white-space: nowrap
+
+    .hero-image
+      /* flex-shrink: 0
+      flex-grow: 0
+
+@media (max-width: 1182px)
+  .hero-section .container
+    justify-content: center
+
+    .hero-image
+      order: -1
+
+    .info-wrapper
+      text-align: center
+      
+@media (max-width: 842px)
+    .hero-section
+      padding-top:0px
+
+/* Services section
+
+.services-section
+  background: url(../img/service_bg.svg) no-repeat
+  background-position: 0px 200px
+  background-size: 1118px 967px
+  text-align: center
+
+  .title
+    padding-top: 192px
+    font-weight: bold
+    font-size: 36px
+    line-height: 56px
+    color: var(--black)
+    mix-blend-mode: normal
+    text-align: center
+    position: relative
+    margin-bottom: 60px
+
+    &:after
+      content: ""
+      position: absolute
+      background-color: var(--black)
+      width: 56px
+      height: 2px
+      left: 50%
+      bottom: -26px
+      transform: translate(-50%)
+
+  .subtitle
+    margin-bottom: 80px
+    text-align: center
+    font-weight: 300
+    font-size: 18px
+    line-height: 30px
+    color: var(--grey)
+    mix-blend-mode: normal
+
+  .cards-container
+    max-width: 1150px
+    padding: 0px 15px
+    margin: 0px auto 69px auto
+    display: grid
+    text-align: left
+    grid-template-columns: repeat(auto-fit, 350px)
+    grid-gap: 35px
+
+    .service-card
+      padding: 54px 45px 0px 39px
+      background-color: var(--white)
+      height: 354px
+      box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4)
+      border-radius: 20px
+
+      .card-title
+        display: block
+        margin-top: 22px
+        font-weight: bold
+        font-size: 24px
+        line-height: 56px
+        color: var(--black)
+        mix-blend-mode: normal
+
+      .card-description
+        font-weight: 300
+        font-size: 16px
+        line-height: 28px
+        color: var(--grey)
+        mix-blend-mode: normal
+
+  .learnmore-btn
+    display: inline-block
+    padding: 0px 51px
+    border: 1.4px solid var(--blue)
+    border-radius: 55px
+    font-weight: bold
+    font-size: 18px
+    line-height: 60px
+    color: var(--blue)
+    mix-blend-mode: normal
+
+@media (max-width: 1182px)
+  .services-section .title
+    padding-top: 80px
+
+@media (max-width: 992px)
+  .services-section .cards-container
+    justify-content: center
+
+/* Leading section
+
+.leading-section
+  padding-top: 220px
+
+  .card
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+    &:not(:last-child)
+      margin-bottom: 229px
+
+    .card-body
+      width: 486px
+      height: 388px
+
+      .card-title
+        display: block
+        position: relative
+        font-weight: bold
+        font-size: 36px
+        line-height: 56px
+        color: var(--black)
+        mix-blend-mode: normal
+        margin-bottom: 59px
+
+        &:after
+          content: ""
+          position: absolute
+          width: 56px
+          height: 2px
+          background-color: var(--black)
+          left: 0
+          bottom: -26px
+
+      .card-description
+        margin-bottom: 37px
+        font-weight: 300
+        font-size: 18px
+        line-height: 30px
+        color: var(--grey)
+        mix-blend-mode: normal
+
+      .card-btn
+        display: inline-block
+        padding: 0px 51px
+        border: 1.4px solid var(--blue)
+        border-radius: 55px
+        font-weight: bold
+        font-size: 18px
+        line-height: 60px
+        color: var(--blue)
+        mix-blend-mode: normal
+
+  .card-reverse
+    flex-direction: row-reverse
+
+@media (max-width: 992px)
+  .leading-section .card
+    flex-wrap: wrap
+    justify-content: center
+    text-align: center
+
+    &:not(:last-child)
+      margin-bottom: 129px
+
+    .card-body .card-title:after
+      left: 50%
+      transform: translate(-50%)
+
+@media (max-width: 992px)
+  .leading-section
+    padding-top: 120px
+
+/* Reviews section
+
+.reviews-section
+  padding-top: 251px
+
+  .review-card
+    padding: 64px 15px 0px 15px
+    max-width: 1150px
+    width: 100%
+    min-height: 425px
+    background: linear-gradient(191.49deg, #67C3F3 9.05%, #5A98F2 76.74%)
+    border-radius: 24px
+
+    .card-title
+      margin-bottom: 93px
+      position: relative
+      display: block
+      font-weight: bold
+      font-size: 36px
+      line-height: 48px
+      color: var(--white)
+      mix-blend-mode: normal
+      text-align: center
+
+      &:after
+        content: ""
+        position: absolute
+        width: 56px
+        height: 2px
+        background-color: var(--white)
+        left: 50%
+        bottom: -25px
+        transform: translate(-50%)
+
+    .card-body
+      max-width: 884px
+      width: 100%
+      margin: 0 auto
+      display: flex
+      justify-content: space-between
+
+      .card-author
+        display: flex
+        align-items: center
+
+        .card-author-img
+          margin-right: 29px
+          border-radius: 50%
+          border: 3px solid var(--white)
+
+        .card-author-name
+          display: block
+          font-weight: bold
+          font-size: 22px
+          line-height: 48px
+          color: var(--white)
+          mix-blend-mode: normal
+
+        .card-author-position
+          display: block
+          font-size: 18px
+          line-height: 48px
+          color: rgba(255, 255, 255, 0.85)
+          mix-blend-mode: normal
+
+      .card-description
+        max-width: 420px
+        font-size: 19px
+        line-height: 30px
+        color: rgba(255, 255, 255, 0.9)
+        mix-blend-mode: normal
+
+  .review-controls
+    max-width: 335px
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin: 42px auto 0px auto
+
+    .back-btn, .next-btn
+      border: none
+      width: 28px
+      height: 18px
+
+    .back-btn
+      background: url(../img/left_arrow.svg)
+
+    .next-btn
+      background: url(../img/left_arrow.svg)
+      transform: rotate(180deg)
+
+    .pagination-btns
+      margin-top: -15px
+
+      .pagination-btn
+        border: none
+        background: #5B9BF3
+        opacity: 0.3
+        width: 10px
+        height: 10px
+        border-radius: 50%
+        margin-right: 18px
+
+      .pagination-btn_active
+        opacity: 1
+
+@media (max-width: 768px)
+  .reviews-section .review-card .card-body
+    flex-direction: column-reverse
+    align-items: center
+
+    .card-description
+      margin-bottom: 50px
+
+    .card-author
+      margin-bottom: 30px
+
+@media (max-width: 768px)
+  .reviews-section
+    padding-top: 51px
+
+/* Articles section
+
+.articles-section
+  text-align: center
+
+  .title
+    padding-top: 192px
+    font-weight: bold
+    font-size: 36px
+    line-height: 56px
+    color: var(--black)
+    mix-blend-mode: normal
+    text-align: center
+    position: relative
+    margin-bottom: 60px
+
+    &:after
+      content: ""
+      position: absolute
+      background-color: var(--black)
+      width: 56px
+      height: 2px
+      left: 50%
+      bottom: -26px
+      transform: translate(-50%)
+
+  .cards-container
+    margin-bottom: 69px
+    padding: 0px 15px
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(0px, 350px))
+    grid-gap: 35px
+    justify-content: center
+
+    .article-card
+      height: 512px
+      box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4)
+      border-radius: 20px
+
+      .card-img
+        border-radius: 20px 20px 0px 0px
+        height: auto
+        width: 100%
+
+      .card-body
+        padding: 24px 34px 0px 34px
+        text-align: left
+
+        .card-title
+          display: block
+          font-weight: bold
+          font-size: 21px
+          line-height: 32px
+          color: var(--black)
+          mix-blend-mode: normal
+          margin-bottom: 12px
+
+        .card-description
+          font-weight: 300
+          font-size: 16px
+          line-height: 28px
+          color: var(--grey)
+          mix-blend-mode: normal
+          margin-bottom: 25px
+
+        .card-btn
+          position: relative
+          font-weight: 600
+          font-size: 17px
+          line-height: 28px
+          color: #4089ED
+          mix-blend-mode: normal
+
+          &:after
+            content: ""
+            position: absolute
+            background: url(../img/left_arrow.svg) center
+            background-size: cover
+            transform: rotate(180deg)
+            right: -25px
+            bottom: 5px
+            width: 14px
+            height: 9px
+
+  .viewall-btn
+    display: inline-block
+    padding: 0px 65px
+    margin-bottom: 200px
+    border: 1.4px solid var(--blue)
+    border-radius: 55px
+    font-weight: bold
+    font-size: 18px
+    line-height: 60px
+    color: var(--blue)
+    mix-blend-mode: normal
+
+@media (max-width: 768px)
+  .articles-section
+    .title
+      padding-top: 92px
+
+    .viewall-btn
+      margin-bottom: 100px
+
+/* Footer
+
+.footer
+  background: linear-gradient(180.92deg, #67C3F3 -8.57%, #5A98F2 82.96%)
+
+  .container
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    padding-top: 118px
+    padding-bottom: 109px
+
+    .first-col
+      max-width: 390px
+      padding: 0px 4px
+      width: 100%
+
+      .logo
+        display: flex
+        align-items: center
+        margin-bottom: 17px
+
+        img
+          margin-right: 12px
+
+        span
+          font-weight: bold
+          font-size: 24px
+          line-height: 30px
+          color: var(--white)
+          mix-blend-mode: normal
+
+      .company-description
+        font-weight: 300
+        font-size: 18px
+        line-height: 28px
+        color: var(--white)
+        mix-blend-mode: normal
+        margin-bottom: 31px
+
+      .copyright
+        font-weight: 300
+        font-size: 16px
+        line-height: 28px
+        color: var(--white)
+        mix-blend-mode: normal
+
+    .second-col .title, .third-col .title, .fourth-col .title
+      font-weight: bold
+      font-size: 20px
+      line-height: 60px
+      color: var(--white)
+      mix-blend-mode: normal
+
+    .second-col a, .third-col a, .fourth-col a
+      display: block
+      font-weight: 300
+      font-size: 18px
+      line-height: 38px
+      color: var(--white)
+      mix-blend-mode: normal
+
+.footer_element
+  position: absolute
+  top: 160px
+  left: 0
+  width: 132px
+  height: 115px
+
+@media (max-width: 768px)
+  .footer .container .first-col
+    max-width: 100%
+    padding: 0px 100px
+    margin-bottom: 30px
+
+@media (max-width: 576px)
+  .footer .container .first-col
+    padding: 0px 15px
+
+/* Animations
+
+@keyframes fadeInToRight
+  from
+    opacity: 0
+    transform: translateX(-100px)
+
+  to
+    opacity: 1
+    transform: translateX(0px)
+
+@keyframes fadeInToLeft
+  from
+    opacity: 0
+    transform: translateX(100px)
+
+  to
+    opacity: 1
+    transform: translateX(0px)
